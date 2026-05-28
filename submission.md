@@ -2,6 +2,7 @@
 
 * **Student Name**: Sanvith
 * **Docker Hub Username**: `sanvith`
+* **GitHub Repository**: [https://github.com/Sanvith6/unlox-devops-practical-assignment.git](https://github.com/Sanvith6/unlox-devops-practical-assignment.git)
 * **Assignment Title**: DevOps Practical Assignment (Beginner to Intermediate)
 * **Date**: May 28, 2026
 
