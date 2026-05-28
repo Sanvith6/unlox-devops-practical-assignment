@@ -79,7 +79,7 @@ unlox/
 3. **Static Hosting**: Configured the bucket for static website hosting with `index.html` as the index suffix document.
 4. **Bucket Policy**: Added a public read policy (`s3:GetObject` to all resources `/*` from principal `*`).
 5. **Website files + Versioning**: Enabled object versioning. The index page is loaded dynamically using Terraform:
-   - File Path: [terraform/s3_website/index.html](file:///c:/project/unlox/terraform/s3_website/index.html)
+   - File Path: [terraform/s3_website/index.html](terraform/s3_website/index.html)
    - Live endpoint: [S3 Endpoint](http://unlox-devops-assignment-898774459947.s3-website-us-east-1.amazonaws.com)
 
 #### S3 Webpage Render Screenshot:
