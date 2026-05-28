@@ -1,0 +1,33 @@
+# Terraform files
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+
+# Sensitive files
+*.pem
+*.key
+.env
+.aws/
+
+# Docker files
+.dockerignore
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+cloud-init-output.log
+
+# Temporary files
+*.tmp
+*.bak
