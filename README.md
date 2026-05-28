@@ -21,21 +21,21 @@ The following diagram illustrates how the system elements are provisioned and in
 
 ```mermaid
 graph TD
-    User([User / Browser]) -->|HTTP Port 80| S3[AWS S3 Static Web Bucket]
-    User -->|HTTP Port 80| EC2[AWS EC2 Web Server]
+    User(["User / Browser"]) -->|HTTP Port 80| S3["AWS S3 Static Web Bucket"]
+    User -->|HTTP Port 80| EC2["AWS EC2 Web Server"]
     User -->|SSH Port 22| EC2
     
-    subgraph AWS Cloud (us-east-1)
+    subgraph aws_cloud ["AWS Cloud (us-east-1)"]
         S3
-        subgraph VPC Network
+        subgraph vpc_network ["VPC Network"]
             EC2
-            SG[Web Security Group: Ports 22 & 80] --> EC2
+            SG["Web Security Group (Ports 22 & 80)"] --> EC2
         end
     end
     
-    subgraph local_env [Local Development Environment]
-        TF[Terraform CLI] -->|Provisions| AWS
-        Docker[Docker Engine] -->|Flask Application| DH[Docker Hub]
+    subgraph local_env ["Local Development Environment"]
+        TF["Terraform CLI"] -->|Provisions| aws_cloud
+        Docker["Docker Engine"] -->|Flask Application| DH["Docker Hub"]
     end
 ```
 
